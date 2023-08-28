@@ -5,15 +5,7 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrowHAT", "GrowHAT.csproj", "{2C97BFC6-4B06-4E92-AD5E-7C52BEAF7A24}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "System.Device.Gpio", "..\..\System.Device.Gpio\System.Device.Gpio.csproj", "{C686192C-4286-4AC0-B5C0-BB897424A684}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iot.Device.Bindings", "..\..\Iot.Device.Bindings\Iot.Device.Bindings.csproj", "{BE430316-4671-4E34-AE96-8DE6799DF2D0}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "System.Device.Model", "..\System.Device.Model\System.Device.Model.csproj", "{4FEAC0A9-A896-45E4-8CA8-BE66BE828763}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "..\Common\Common.csproj", "{D933980A-26AE-4AF3-BBBE-DD03A8CC82B6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "growHatTests", "growHatTests\growHatTests.csproj", "{300846F0-264A-4D6C-9611-80C0EC850D73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "growHatTests", "growHatTests\growHatTests.csproj", "{300846F0-264A-4D6C-9611-80C0EC850D73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,22 +17,6 @@ Global
 		{2C97BFC6-4B06-4E92-AD5E-7C52BEAF7A24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C97BFC6-4B06-4E92-AD5E-7C52BEAF7A24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C97BFC6-4B06-4E92-AD5E-7C52BEAF7A24}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C686192C-4286-4AC0-B5C0-BB897424A684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C686192C-4286-4AC0-B5C0-BB897424A684}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C686192C-4286-4AC0-B5C0-BB897424A684}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C686192C-4286-4AC0-B5C0-BB897424A684}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BE430316-4671-4E34-AE96-8DE6799DF2D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BE430316-4671-4E34-AE96-8DE6799DF2D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BE430316-4671-4E34-AE96-8DE6799DF2D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BE430316-4671-4E34-AE96-8DE6799DF2D0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4FEAC0A9-A896-45E4-8CA8-BE66BE828763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4FEAC0A9-A896-45E4-8CA8-BE66BE828763}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4FEAC0A9-A896-45E4-8CA8-BE66BE828763}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4FEAC0A9-A896-45E4-8CA8-BE66BE828763}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D933980A-26AE-4AF3-BBBE-DD03A8CC82B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D933980A-26AE-4AF3-BBBE-DD03A8CC82B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D933980A-26AE-4AF3-BBBE-DD03A8CC82B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D933980A-26AE-4AF3-BBBE-DD03A8CC82B6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{300846F0-264A-4D6C-9611-80C0EC850D73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{300846F0-264A-4D6C-9611-80C0EC850D73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{300846F0-264A-4D6C-9611-80C0EC850D73}.Release|Any CPU.ActiveCfg = Release|Any CPU

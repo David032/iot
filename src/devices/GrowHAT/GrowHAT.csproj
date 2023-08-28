@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>$(DefaultBindingTfms)</TargetFrameworks>
@@ -13,6 +13,17 @@
     <Compile Include="GrowHatDevice.cs" />
     <Compile Include="GrowHatLightSensor.cs" />
     <Compile Include="GrowHatSoilSensor.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Iot.Device.Bindings" Version="3.0.0" />
+    <PackageReference Include="System.Device.Gpio" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
+    <PackageReference Include="System.Device.Ports.SerialPort">
+      <Version>1.0.0-serialport.22404.4</Version>
+    </PackageReference>
   </ItemGroup>
 
 </Project>

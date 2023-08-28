@@ -3,18 +3,12 @@
 
 using System;
 using System.Device.I2c;
-using System.Device.Model;
-using System.Diagnostics;
-using System.Drawing;
-using System.Numerics;
-using UnitsNet;
 
 namespace Iot.Device.GrowHat
 {
     /// <summary>
     /// GrowHAT Mini
     /// </summary>
-    [Interface("GrowHAT")]
     public class GrowHAT : IDisposable
     {
         /// <summary>
@@ -67,13 +61,11 @@ namespace Iot.Device.GrowHat
         /// <summary>
         /// The onboard light and proximity sensor
         /// </summary>
-        [Component]
         public GrowHatLightSensor? LightSensor { get; private set; }
 
         /// <summary>
         /// The onboard buzzer
         /// </summary>
-        [Component]
         public GrowHatBuzzer? Buzzer { get; private set; }
 
         // Todo buttons and screen
