@@ -1,4 +1,7 @@
-﻿using System;
+﻿// Licensed to the .NET Foundation under one or more agreements.
+// The .NET Foundation licenses this file to you under the MIT license.
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +11,9 @@ using System.Device.Pwm;
 
 namespace Iot.Device.GrowHat
 {
+    /// <summary>
+    /// Pinout for the soil sensors
+    /// </summary>
     public enum SoilSensorPin
     {
         S1 = 23,
@@ -138,6 +144,9 @@ namespace Iot.Device.GrowHat
             }
         }
 
+        /// <summary>
+        /// Get the history of the soil sensor
+        /// </summary>
         public List<double> History
         {
             get

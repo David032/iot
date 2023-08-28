@@ -84,21 +84,24 @@ namespace Iot.Device.GrowHat
         /// </summary>
         /// <param name="i2cBus">?</param>
         /// <param name="shouldDispose">?</param>
+        /// <param name="onboardDevices">Should the onboard light and buzzer be enabled?</param>
         /// <param name="s1">Soil Sensor 1</param>
         /// <param name="s2">Soil Sensor 2</param>
         /// <param name="s3">Soil Sensor 3</param>
         /// <param name="d1">LV device 1</param>
         /// <param name="d2">LV device 1</param>
         /// <param name="d3">LV device 1</param>
-        public GrowHAT(I2cBus? i2cBus = null, bool shouldDispose = false,
+        public GrowHAT(I2cBus? i2cBus = null, bool shouldDispose = false, bool onboardDevices = false,
                         GrowHatSoilSensor? s1 = null, GrowHatSoilSensor? s2 = null, GrowHatSoilSensor? s3 = null,
                         GrowHatDevice? d1 = null, GrowHatDevice? d2 = null, GrowHatDevice? d3 = null)
         {
             _shouldDispose = shouldDispose || i2cBus == null;
             _i2cBus = i2cBus ?? I2cBus.Create(DefaultI2cBusId);
-            // Always create the onboard devices
-            LightSensor = new();
-            Buzzer = new();
+            if (onboardDevices)
+            {
+                LightSensor = new();
+                Buzzer = new();
+            }
 
             SoilSensor1 = s1;
             SoilSensor2 = s2;
