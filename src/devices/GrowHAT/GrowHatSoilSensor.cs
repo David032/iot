@@ -3,11 +3,8 @@
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Device.Gpio;
-using System.Device.Pwm;
+using System.Linq;
 
 namespace Iot.Device.GrowHat
 {
@@ -16,8 +13,19 @@ namespace Iot.Device.GrowHat
     /// </summary>
     public enum SoilSensorPin
     {
+        /// <summary>
+        /// Sensor 1
+        /// </summary>
         S1 = 23,
+
+        /// <summary>
+        /// Sensor 2
+        /// </summary>
         S2 = 8,
+
+        /// <summary>
+        /// Sensor 3
+        /// </summary>
         S3 = 25
     }
 

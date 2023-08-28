@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "System.Device.Model", "..\S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "..\Common\Common.csproj", "{D933980A-26AE-4AF3-BBBE-DD03A8CC82B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "growHatTests", "growHatTests\growHatTests.csproj", "{300846F0-264A-4D6C-9611-80C0EC850D73}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D933980A-26AE-4AF3-BBBE-DD03A8CC82B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D933980A-26AE-4AF3-BBBE-DD03A8CC82B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D933980A-26AE-4AF3-BBBE-DD03A8CC82B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{300846F0-264A-4D6C-9611-80C0EC850D73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{300846F0-264A-4D6C-9611-80C0EC850D73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{300846F0-264A-4D6C-9611-80C0EC850D73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{300846F0-264A-4D6C-9611-80C0EC850D73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
