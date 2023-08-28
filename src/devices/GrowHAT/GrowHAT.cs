@@ -2,6 +2,7 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 
 using System;
+using System.Collections.Generic;
 using System.Device.I2c;
 
 namespace Iot.Device.GrowHat
@@ -133,6 +134,58 @@ namespace Iot.Device.GrowHat
             }
 
             _i2cBus = null!;
+        }
+
+        /// <summary>
+        /// Get the active soil sensors
+        /// </summary>
+        /// <returns>List of active soil sensors</returns>
+        public List<GrowHatSoilSensor> GetSoilSensors()
+        {
+            List<GrowHatSoilSensor> growHatSoilSensors = new();
+
+            if (SoilSensor1 != null)
+            {
+                growHatSoilSensors.Add(SoilSensor1);
+            }
+
+            if (SoilSensor2 != null)
+            {
+                growHatSoilSensors.Add(SoilSensor2);
+            }
+
+            if (SoilSensor3 != null)
+            {
+                growHatSoilSensors.Add(SoilSensor3);
+            }
+
+            return growHatSoilSensors;
+        }
+
+        /// <summary>
+        /// Get the active devices
+        /// </summary>
+        /// <returns>List of active devices</returns>
+        public List<GrowHatDevice> GetDevices()
+        {
+            List<GrowHatDevice> growHatDevices = new();
+
+            if (Device1 != null)
+            {
+                growHatDevices.Add(Device1);
+            }
+
+            if (Device2 != null)
+            {
+                growHatDevices.Add(Device2);
+            }
+
+            if (Device3 != null)
+            {
+                growHatDevices.Add(Device3);
+            }
+
+            return growHatDevices;
         }
     }
 }
