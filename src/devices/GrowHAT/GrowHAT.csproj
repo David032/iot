@@ -15,4 +15,8 @@
     <Compile Include="GrowHatSoilSensor.cs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Buzzer\Buzzer.csproj" />
+  </ItemGroup>
+
 </Project>

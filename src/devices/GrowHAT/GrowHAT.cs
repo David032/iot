@@ -67,9 +67,12 @@ namespace Iot.Device.GrowHat
         /// <summary>
         /// The onboard buzzer
         /// </summary>
-        public GrowHatBuzzer? Buzzer { get; private set; }
+        public Buzzer.Buzzer? HatBuzzer { get; private set; }
 
+        #region IO
         // Todo buttons and screen
+        #endregion
+
         #endregion
 
         /// <summary>
@@ -93,7 +96,7 @@ namespace Iot.Device.GrowHat
             if (onboardDevices)
             {
                 LightSensor = new();
-                Buzzer = new();
+                HatBuzzer = new(13);
             }
 
             SoilSensor1 = s1;
@@ -115,8 +118,8 @@ namespace Iot.Device.GrowHat
             {
                 LightSensor?.Dispose();
                 LightSensor = null!;
-                Buzzer?.Dispose();
-                Buzzer = null!;
+                HatBuzzer?.Dispose();
+                HatBuzzer = null!;
 
                 SoilSensor1?.Dispose();
                 SoilSensor1 = null!;

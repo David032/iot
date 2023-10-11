@@ -63,6 +63,7 @@ namespace Iot.Device.GrowHat
             _timeLastReading = DateTime.UtcNow.Ticks / TimeSpan.TicksPerSecond;
             _lastPulse = DateTime.UtcNow.Ticks / TimeSpan.TicksPerSecond;
 
+            _controller.OpenPin(_pin);
             _controller.SetPinMode(_pin, PinMode.Input);
             _controller.RegisterCallbackForPinValueChangedEvent(_pin, PinEventTypes.Rising, EventHandler);
         }
